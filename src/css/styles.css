@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #333;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 0 auto 30px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10 px;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #4c4f50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+#listaCadastros li {
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    padding:  15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#listaCadastros button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#listaCadastros button:hover {
+    background-color: #c0392b;
+}
+
+.mensagem {
+    position: relative;
+    text-align: center;
+    margin: 15px auto;
+    padding: 12px 16px;
+    max-width: 500px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 16px;
+    display: none;
+    opacity: 0;
+    animation: fadeIn 0.3s forwards;
+    transition: opacity 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.mensagem.sucesso {
+    background-color: #d4edda;
+    color: #155724;
+    border-left: 6px solid #28a745;
+}
+
+.mensagem.erro {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-left: 6px solid #dc3545;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.item-cadastro {
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #dcdcdc;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.item-cadastro:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.item-cadastro p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+.item-cadastro strong {
+    display: inline-block;
+    color: #333;
+    font-weight: bold;
+}
+
+.item-cadastro button {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.btn-excluir {
+    background-color: #dc3545; /* Vermelho */
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-excluir:hover {
+    background-color: #c82333;
+}
+
+.btn-editar {
+    background-color: #28a745; /* Verde */
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    margin-left: 10px; /* Espaço entre os botões */
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-editar:hover {
+    background-color: #218838;
+}

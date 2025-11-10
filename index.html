@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <title>Cadastro de Pesssoas</title>
+</head>
+<body>
+    <h1>Cadastro de Pessoas</h1>
+
+    <form id="cadastroForm">
+        <label>Nome: <input type="text" id="nome" required></label><br>
+        <label>Data de Nascimento: <input type="date" id="dataNascimento" required></label><br>
+        <label>Telefone: <input type="tel" id="telefone" maxlength="15" required></label><br>
+        <label>Email: <input type="email" id="email" required></label><br>
+        <button type="submit">Salvar Cadastro</button>
+    </form>
+
+    <div id = "mensagem" class="mensagem"></div>
+
+    <h2>Lista de Cadastros</h2>
+    <ul id="listaCadastros"></ul>
+
+    <script type="module" src="src/js/main.js"></script>
+</body>
+</html>
