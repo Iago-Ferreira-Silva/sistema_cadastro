@@ -24,4 +24,4 @@ O objetivo é praticar conceitos básicos de JavaScript, CSS, HTML e localStorag
 ![Badge Concluído](http://img.shields.io/static/v1?label=STATUS&message=CONCLUÍDO&color=brightgreen&style=for-the-badge)
 
 ## ✏️ Autor
-Iago Ferreira Silva
+- [Iago Ferreira Silva](https://github.com/Iago-Ferreira-Silva)
